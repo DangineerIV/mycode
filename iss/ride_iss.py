@@ -23,8 +23,11 @@ def main():
     print(helmetson)
 
     print('\n\nPeople in Space: ', helmetson['number'])
+    people = helmetson['people']
+    print(people)
 
-    print(helmetson['name'] + " on the " + helmetson['craft']) 
+    for i in people:
+        print(f"{i['name']}  is on the  {i['craft]}")
 
 main()    
 
